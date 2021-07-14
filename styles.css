@@ -28,17 +28,12 @@ body{
 header{
     
     background-color: #2D25A0;
-    color:white;
-   
+    
 }
 
-.copa-top{
-    margin-left: 156px;
-    margin-right: 124px;
 
-}
 nav{ 
-    padding-top: 43px;
+    padding: 42px 124px 49px 156px;
     display:flex;
     justify-content: space-between;
 
@@ -52,11 +47,14 @@ nav p a{
 .copa-heading{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin-bottom: 70px;
+    padding: 0px 140px 86px 156px;
 }
 
 .copa-text{
     width: 485px;
     height: 230px;
+    padding-right: 102px;
 }
 .copa-text h1{
     color:#FFFFFF;
@@ -67,8 +65,12 @@ nav p a{
     margin-bottom: 80px;
 }
 .copa-pic img{
-    width: 556px;
+ 
     height: 438px;
+}
+header:hover .copa-pic img {
+    transition: transform 2s;
+    transform: scale(1.2) rotate(45deg);
 }
 
 
@@ -77,11 +79,7 @@ Section Styless
 ----------
 */
 
-.container {
-   
-    margin: 70px 210px 70px 180px;
-      
-  }
+
 
 .players{
     display: grid;
@@ -89,6 +87,7 @@ Section Styless
     grid-row-gap: 27px;
     grid-template-columns: repeat(3,1fr);
     width: 70%;
+    margin: 0px 210px 0px 180px;
     
 }
 .player{
@@ -109,7 +108,7 @@ Section Styless
    height: 260px;
 }
 .player-about{
-    box-sizing: border-box;
+    width: 100%;
     margin-bottom: 33px;
     font-size: 16px;
     color: #6C6C6C;
@@ -122,10 +121,10 @@ Section Styless
     padding: 25px;
 }
 .videos{
+    margin: 165px 156px 158px 182px;
     display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 25px;
     grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
 }
 .video{
     width: 328px;
@@ -149,31 +148,30 @@ Section Styless
 /*-----------
  Foooter
 --------- */
-.foot-contain{
-
+.footer-container{
+    margin: 50px 0px 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    padding-bottom: 30px;
-}  
-
-
-.footer-pic img{
+}
+.footer-logo img{
     width: 483.87px;
     height: 110px;
 }
-
-
-
-
-
-
-
-
-
-
+.footer-icon{
+    margin: 10px 0px;
+}
+.footer-icon a{
+    height: 32px;
+    width: 32px;
+    margin:0px 7px;
+    padding: 10px;
+    border-radius: 50%;
+     background-color: rgba(128, 128, 128, 0.322); 
+}
+.footer-copyright{
+    font-size: 18px;
+}
 
 /* Media Query--------
  */
@@ -183,24 +181,19 @@ Section Styless
     display: none;
   }
 
-.copa-top{
-    width: 25%;
-    margin-left: 16px;
-    margin-right: 21px;
-    margin-bottom: 30px;
-    margin-bottom: 30px;
-}
 .copa-heading{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    flex-direction:column;
+    margin: 0px 16px 47px 15px;
+    padding: 0px;
 }
 
-.copa-text{
-    width: 278px;
-    height: 138px;
-}
 .copa-text h1{
+    margin-left: 15px;
+    width: 278px;
+    text-align: left;
     font-size: 36px;
+    
 }
 
 
@@ -211,29 +204,36 @@ Section Styless
     height:60%;
 }
 .copa-pic img{
-   width: 329px;
-   height: 259px;
+    width: 329px;
+    height: 259.17px;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 61px;
 }
 
-.container {
-   
-width: 100%;
-      
-  }
 
 .players{
-   display: grid;
-   grid-template-columns: repeat(1,1fr);
+   
+    grid-template-columns: repeat(1,1fr);
+        row-gap: 24px;
+        margin: 0px;
+}
+.player{
+    margin: 12px 15px;
+    align-items: center;
 }
 .videos{
-    display: grid;
     grid-template-columns: repeat(1,1fr);
-}
+    row-gap: 24px;
+    margin: 0px;
+} 
 
-.foot-contain img{
-    width: 60%;
-    height: 60%;
-    margin-left: 50px;
+.footer-logo img{
+    margin-bottom:29px;
+    width: 125px;
+    height: 29px;
 }
-
+.footer-copyright p{
+    margin-top: 20px;
+}
 }
