@@ -108,7 +108,7 @@ Section Styless
 }
 .player-pic img{
     width: 328px;
-height: 260px;
+   height: 260px;
 }
 .player-about{
 
@@ -159,9 +159,38 @@ height: 260px;
 /* Media Query--------
  */
  @media (max-width:700px){
+     
+.head-info{
+    padding-top: 2px;
+    margin-left: 16px;
+    margin-right: 66px;
+  
+  
+}
      .header-details{
+
          grid-template-columns: repeat(1,1fr);
      }
+     
+.header-details{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap:50px;
+}
+h1{
+   
+    font-size: 40px;
+    font-weight:700;
+}
+
+.head-pic img{
+   
+    width: 330px;
+    height: 260px;
+}
+
      .nav-bar{
          display: none;
      }
