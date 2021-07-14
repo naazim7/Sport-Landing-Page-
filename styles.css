@@ -12,14 +12,15 @@ body{
     font-weight: 400;
     font-size: 16px;
 }
-.button{
-    background-color: #E02C6D;
-    padding: 10px 24px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+.link{
+       padding: 10px 24px 10px 24px;
+       text-decoration: none;
+       background-color: #E02C6D;
+       color: #FFFFFF;
 }
-
+.link>i {
+    padding: 0 10px;
+}
 
 .title-sec{
    
@@ -30,53 +31,42 @@ body{
 /* ------Header Css
 ---- */
 header{
-    
     background-color: #2D25A0;
-   
 }
-
-
-nav{ 
-    padding: 42px 124px 49px 156px;
-    display:flex;
+.navbar{
+    display: flex;
     justify-content: space-between;
-
+    padding: 42px 124px 49px 156px;
 }
-nav p a{
-    margin-right: 36px;
+.nav-half a{
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 10px 36px 10px 0px;
 }
-
-.copa-heading{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+/* -----------
+header info and banner 
+------------------ */
+.header-container{
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
     margin-bottom: 70px;
     padding: 0px 140px 86px 156px;
 }
-
-.copa-text{
-    width: 485px;
-    height: 230px;
-   
-}
-.copa-text h1{
-    color:#FFFFFF;
+.header-info h1{
     font-size: 64px;
     font-weight: 700;
+    padding-right: 102px;
 }
-.copa-pic{
-    margin-bottom: 80px;
-}
-.copa-pic img{
- 
+.header-banner>img{
     height: 438px;
 }
-header:hover img{
+/*add transform  and transition in header  */
+.header-banner:hover{
     transition: transform 2s;
-    transform: scale(1.2) rotate(45deg);
+    transform: scale(0.8) rotate(45deg);
 }
-
 /* ------------
 Section Styless 
 ----------
@@ -145,7 +135,7 @@ Extra
     color: #6C6C6C;
    
     margin-top: 25px;
-   margin-bottom: 20px;
+     margin-bottom: 20px;
     
 }
 .sponser{
@@ -198,51 +188,35 @@ border-radius: 50%;
  */
  @media (max-width:700px)
  {
- nav{
-    display: none;
-  }
-header{
-    width: 100vh;
-}
-.copa-heading{
-  
-    display: flex;
-    flex-direction:column;
-    margin: 0px 16px 47px 15px;
-    padding: 0px;
-}
-.copa-text h1{
-    margin-left: 15px;
-    width: 278px;
-    text-align: left;
-    font-size: 36px;
-    
-}
+    .navbar{
+        display: none;
+    }
+    /* Header Responaive*/
+    .header-container {
+        flex-direction: column;
+        margin: 0px 16px 47px 15px;
+        padding: 0px;
+    }
+    .header-info h1{
+        margin-left: 15px;
+        width: 278px;
+        text-align: left;
+        font-size: 36px;
+        padding: 121px 66px 30px 16px;
+    } 
+    .header-info a{
+        padding-left: 15px;
+        margin-left: 25px;
+    }
+    .header-banner img{
+        width: 329px;
+        height: 259.17px;
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 61px;
+    }
 
-
-.copa-pic{
-    padding-top: 100px;
-    margin-bottom: 60px;
-    width: 60%;
-    height:60%;
-}
-.copa-pic img{
-    width: 329px;
-    height: 259.17px;
-    margin: 0px;
-    padding-top: 50px;
-    padding-bottom: 61px;
-}
-
-header:hover img{
-    transition: transform 2s;
-    transform: scale(.8) rotate(45deg);
-}
-
-.container{
-    width:100%;
-}
-.players{
+   .players{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin: 20px 0px 20px 10px;
