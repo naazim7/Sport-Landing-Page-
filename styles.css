@@ -1,13 +1,15 @@
 /* -----
 Imported
 ---- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* Common style */
 
 body{
    
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+     font-weight: 400;
+    font-size: 16px;
 }
 .button{
     background-color: #E02C6D;
@@ -30,49 +32,43 @@ header{
    
 }
 
-
-.head-info{
-    padding-top: 42px;
+.copa-top{
     margin-left: 156px;
     margin-right: 124px;
-  
-  
-}
-.nav-bar{
 
-    display: flex;
+}
+nav{ 
+    padding-top: 43px;
+    display:flex;
     justify-content: space-between;
-    align-items: center;
-   
- 
+
+}
+nav p a{
+    margin-right: 36px;
+    text-decoration: none;
+    color: white;
 }
 
-.nav-bar a{
-    color:white;
-    text-decoration: none;
-    margin-right: 36px;
-    font-size: 16px;
-}
-.header-details{
-    margin-top: 67px;
-    margin-bottom: 67px;
+.copa-heading{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-h1{
-   
-    font-size: 60px;
-    font-weight:700;
-}
-.head-text
-{
+
+.copa-text{
     width: 485px;
     height: 230px;
-    
 }
-.head-pic img{
-    height: 436px;
+.copa-text h1{
+    color:#FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+}
+.copa-pic{
+    margin-bottom: 80px;
+}
+.copa-pic img{
     width: 556px;
+    height: 438px;
 }
 
 
@@ -81,7 +77,7 @@ Section Styless
 ----------
 */
 
-.container{
+.container {
    
   margin: 70px 210px 70px 180px;
     
@@ -91,6 +87,7 @@ Section Styless
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     grid-template-columns: repeat(3,1fr);
+    width: 70%;
     
 }
 .player{
@@ -158,51 +155,64 @@ Section Styless
 
 /* Media Query--------
  */
- @media (max-width:700px){
-     header{
-         width: 100%;
-     }
-.head-info{
-    padding-top: 2px;
+ @media (max-width:700px)
+ {
+ nav{
+    display: none;
+  }
+
+.copa-top{
+    width: 25%;
     margin-left: 16px;
-    margin-right: 66px;
-  
-  
+    margin-right: 21px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
 }
-    
-     
-.header-details{
-    margin-top: 5px;
-    margin-bottom: 5px;
+.copa-heading{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-row-gap:50px;
-}
-h1{
-   
-    font-size: 40px;
-    font-weight:700;
 }
 
-.head-pic img{
-   
-    width: 330px;
-    height: 260px;
+.copa-text{
+    width: 278px;
+    height: 138px;
 }
-    
-     .nav-bar{
-         display: none;
-     }
-     .container{
-        margin: 60px 0 47px 0px;
-     }
-     .players{
-         grid-template-columns: repeat(1,1fr);
-     }
-   
-.footer-pic img{
-    width:150px;
-    height: 63px;
+.copa-text h1{
+    font-size: 36px;
 }
+
+
+.copa-pic{
+    padding-top: 100px;
+    margin-bottom: 60px;
+    width: 60%;
+    height:60%;
+}
+.copa-pic img{
+   width: 329px;
+   height: 259px;
+}
+footer{
+    display: none;
+}
+
+.container {
+   
+    margin:15px;
+      
+  }
+
+.players{
+   display: flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+}
+
+.player{
+   
+  
+    margin-left: 35px;
 
  }
+}
