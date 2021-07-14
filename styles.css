@@ -94,7 +94,7 @@ Section Styless
     height: 475px;
     width: 330px;
     padding: 15px;
- 
+   
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .player h3{
@@ -192,9 +192,6 @@ Section Styless
    width: 329px;
    height: 259px;
 }
-footer{
-    display: none;
-}
 
 .container {
    
@@ -207,4 +204,9 @@ footer{
    grid-template-columns: repeat(1,1fr);
 }
 
+.foot-contain img{
+    width: 60%;
+    height: 60%;
+    margin-left: 50px;
+}
 }
